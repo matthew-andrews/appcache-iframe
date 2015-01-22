@@ -18,7 +18,7 @@
       status = ac.status;
       trigger(status, hasChecked);
     }
-    if (loopMax--) {
+    if (loopMax-- > 0) {
       checkIn(1000);
     } else {
       trigger(-1, hasChecked);
